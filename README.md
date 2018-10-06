@@ -1,4 +1,4 @@
-# Peloton
+# Peloton using R
 
 I created these R scripts to be able to download my workout data with more granularity than what's available in the peloton website. You'll need first to find your Peloton ID by going to the peloton website and copying the url of one of your workouts. URL looks something like this:
 
@@ -15,4 +15,3 @@ json.find.user.id <-
   jsonlite::fromJSON(paste0("https://api.pelotoncycle.com/api/workout/", id.from.peloton, "/summary"))
 json.find.user.id$user_id
 ```
-
